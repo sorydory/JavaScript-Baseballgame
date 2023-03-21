@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #wrap {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to right, #29323c, #485563);
+        position: relative;
+      }
+      h2 {
+        color: #fff;
+        position: absolute;
+        left: 650px;
+        top: 380px;
+        font-size: 80px;
+        font-weight: bold;
+        text-shadow: 11px 11px 11px black;
+      }
+      h1 {
+        color: rgb(33, 192, 171);
+        position: absolute;
+        left: 750px;
+        top: 480px;
+        font-size: 110px;
+        font-weight: bold;
+        text-shadow: 11px 11px 11px black;
+      }
+
+      .slider {
+        box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 960px;
+      }
+
+      .slider::before {
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        z-index: 2;
+      }
+
+      .slider::after {
+        content: "";
+        height: 100px;
+        position: absolute;
+        width: 200px;
+        /*z-index: 2;
+            */
+      }
+
+      .slider::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
+
+      .slider::before {
+        left: 0;
+        top: 0;
+      }
+
+      #logo img {
+        width: 185px;
+      }
+
+      button {
+        display: none;
+      }
+
+      MARQUEE {
+        height: 180px;
+        position: absolute;
+        top: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap" class="slider">
+      <div id="logo" class="slide-track">
+        <marquee scrollamount="25">
+          <img src="./image/ncdinos.png" alt="" />
+          <img src="./image/samsungLions.png" alt="" />
+          <img src="./image/lotteGiants.png" alt="" />
+          <img src="./image/kiaTigers.png" alt="" />
+          <img src="./image/lgTwins.png" alt="" />
+          <img src="./image/doosanBears.png" alt="" />
+          <img src="./image/hanhwaEagles.png" alt="" />
+          <img src="./image/kiwoomHeroes.png" alt="" />
+          <img src="./image/ssgLanders.png" alt="" />
+          <img src="./image/ktWiz.png" alt="" />
+          <img src="./image/ncdinos.png" alt="" />
+          <img src="./image/samsungLions.png" alt="" />
+          <img src="./image/lotteGiants.png" alt="" />
+          <img src="./image/kiaTigers.png" alt="" />
+          <img src="./image/lgTwins.png" alt="" />
+          <img src="./image/doosanBears.png" alt="" />
+          <img src="./image/hanhwaEagles.png" alt="" />
+          <img src="./image/kiwoomHeroes.png" alt="" />
+          <img src="./image/ssgLanders.png" alt="" />
+          <img src="./image/ktWiz.png" alt="" />
+        </marquee>
+      </div>
+      <button></button>
+      <h2><i>G A M E</i></h2>
+      <h1><i>S T A R T</i></h1>
+    </div>
+  </body>
+</html>

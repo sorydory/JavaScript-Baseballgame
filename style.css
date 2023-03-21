@@ -1,0 +1,751 @@
+@font-face {
+  font-family: "LAB디지털";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "LAB디지털";
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+@keyframes roo1 {
+  0% {
+    top: 699px;
+    left: 50%;
+  }
+  100% {
+    top: 625px;
+    left: 61%;
+  }
+}
+@keyframes roo2 {
+  0% {
+    top: 699px;
+    left: 50%;
+  }
+  50% {
+    top: 625px;
+    left: 61%;
+  }
+  100% {
+    top: 527px;
+    left: 51%;
+  }
+}
+@keyframes roo3 {
+  0% {
+    top: 699px;
+    left: 50%;
+  }
+  33% {
+    top: 625px;
+    left: 61%;
+  }
+  66% {
+    top: 527px;
+    left: 51%;
+  }
+  100% {
+    top: 617px;
+    left: 42%;
+  }
+}
+@keyframes homerun {
+  0% {
+    top: 699px;
+    left: 50%;
+  }
+  25% {
+    top: 625px;
+    left: 61%;
+  }
+  50% {
+    top: 527px;
+    left: 51%;
+  }
+  75% {
+    top: 617px;
+    left: 42%;
+  }
+  100% {
+    top: 699px;
+    left: 50%;
+  }
+}
+
+@keyframes onetotwo {
+  0% {
+    top: 625px;
+    left: 61%;
+  }
+  100% {
+    top: 527px;
+    left: 51%;
+  }
+}
+
+@keyframes onetothree {
+  0% {
+    top: 625px;
+    left: 61%;
+  }
+  50% {
+    top: 527px;
+    left: 51%;
+  }
+  100% {
+    top: 617px;
+    left: 42%;
+  }
+}
+@keyframes onetohome {
+  0% {
+    top: 625px;
+    left: 61%;
+  }
+  33% {
+    top: 527px;
+    left: 51%;
+  }
+  66% {
+    top: 617px;
+    left: 42%;
+  }
+  100% {
+    top: 699px;
+    left: 50%;
+  }
+}
+
+@keyframes twotothree {
+  0% {
+    top: 527px;
+    left: 51%;
+  }
+  100% {
+    top: 617px;
+    left: 42%;
+  }
+}
+@keyframes twotohome {
+  0% {
+    top: 527px;
+    left: 51%;
+  }
+  50% {
+    top: 617px;
+    left: 42%;
+  }
+  100% {
+    top: 699px;
+    left: 50%;
+  }
+}
+@keyframes threetohome {
+  0% {
+    top: 617px;
+    left: 42%;
+  }
+  100% {
+    top: 699px;
+    left: 50%;
+  }
+}
+
+#first_bg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #29323c, #485563);
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.gamebtn h2 {
+  color: #fff;
+  position: absolute;
+  left: 650px;
+  top: 480px;
+  font-size: 80px;
+  font-weight: bold;
+}
+.gamebtn h1 {
+  color: rgb(33, 192, 171);
+  position: absolute;
+  left: 750px;
+  top: 580px;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+#first_bg a {
+  cursor: pointer;
+  text-shadow: 11px 11px 11px black;
+}
+#first_bg a:active h2 {
+  top: 485px;
+}
+#first_bg a:active h1 {
+  top: 585px;
+}
+#logo img {
+  width: 185px;
+}
+MARQUEE {
+  position: absolute;
+  top: 250px;
+}
+
+body {
+  width: 100%;
+  height: 95vh;
+  background: url("./image/baseballground.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+#wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 48px auto;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.main #stadium img {
+  position: absolute;
+  top: 410px;
+  left: 52%;
+  transform: translate(-50%);
+  width: 1000px;
+  height: 450px;
+}
+
+/*서있는 아이콘 시작*/
+/*1루에서 서있는사람*/
+#wait1 {
+  position: absolute;
+  top: 625px;
+  left: 61%;
+  display: none;
+}
+
+#wait1 img {
+  width: 48px;
+  height: 48px;
+}
+#wait1.on {
+  display: block;
+}
+
+/*투수*/
+#wait2 {
+  position: absolute;
+  top: 699px;
+  left: 50%;
+}
+
+#wait2 img {
+  width: 50px;
+  height: 58px;
+}
+#wait2.off {
+  display: none;
+}
+/*타자*/
+#wait3 {
+  position: absolute;
+  top: 588px;
+  left: 49%;
+}
+
+#wait3 img {
+  width: 52px;
+  height: 67px;
+}
+/*홈에서 움직이는 사람*/
+#run {
+  position: absolute;
+  top: 699px;
+  left: 50%;
+  display: none;
+}
+#run.on {
+  display: block;
+}
+#run img {
+  width: 50px;
+  height: 58px;
+}
+#run.roo1 {
+  animation: roo1 3s;
+  animation-fill-mode: forwards;
+}
+
+#run.roo2 {
+  animation: roo2 3s;
+  animation-fill-mode: forwards;
+}
+
+#run.roo3 {
+  animation: roo3 3s;
+  animation-fill-mode: forwards;
+}
+#run.homerun {
+  animation: homerun 5s;
+  animation-fill-mode: forwards;
+}
+/*1루에서 움직이는사람*/
+#run1 {
+  position: absolute;
+  top: 625px;
+  left: 61%;
+  display: none;
+}
+#run1 img {
+  width: 50px;
+  height: 58px;
+}
+#run1.on {
+  display: block;
+}
+#run1.onetotwo {
+  animation: onetotwo 3s;
+  animation-fill-mode: forwards;
+}
+#run1.onetothree {
+  animation: onetothree 3s;
+  animation-fill-mode: forwards;
+}
+#run1.onetohome {
+  animation: onetohome 3s;
+  animation-fill-mode: forwards;
+}
+
+/*2루에서 움직이는 사람*/
+#run2 {
+  position: absolute;
+  top: 527px;
+  left: 51%;
+  display: none;
+}
+#run2 img {
+  width: 50px;
+  height: 58px;
+}
+#run2.on {
+  display: block;
+}
+
+#run2.twotothree {
+  animation: twotothree 3s;
+  animation-fill-mode: forwards;
+}
+
+#run2.twotohome {
+  animation: twotohome 3s;
+  animation-fill-mode: forwards;
+}
+/*3루에서 움직이는 사람*/
+#run3 {
+  position: absolute;
+  top: 699px;
+  left: 50%;
+  display: none;
+}
+#run3 img {
+  width: 50px;
+  height: 58px;
+}
+#run3.on {
+  display: block;
+}
+#run3.threetohome {
+  animation: threetohome 3s;
+  animation-fill-mode: forwards;
+}
+
+/*2루베이스에 서있는사람*/
+#base2 {
+  position: absolute;
+  top: 527px;
+  left: 51%;
+  display: none;
+}
+#base2 img {
+  width: 50px;
+  height: 58px;
+}
+#base2.on {
+  display: block;
+}
+/*3루베이스에 서있는사람*/
+#base3 {
+  position: absolute;
+  top: 617px;
+  left: 42%;
+  display: none;
+}
+#base3 img {
+  width: 50px;
+  height: 58px;
+}
+#base3.on {
+  display: block;
+}
+/*1루에 사람이 있을때*/
+
+/*서있는 아이콘 끝*/
+
+.bot {
+  display: flex;
+  justify-content: space-evenly;
+  height: 250px;
+  border: 1px solid #222;
+  align-items: center;
+  background: black;
+  position: relative;
+}
+
+.bot #score {
+  width: 58%;
+  height: 80%;
+  border: 1px solid #222;
+  background: black;
+  color: rgb(210, 224, 84);
+  font-size: 20px;
+  text-align: center;
+}
+
+.bot #score ul {
+  display: flex;
+  height: 33.3333333333%;
+}
+
+.bot #score ul li {
+  text-align: center;
+}
+
+.bot #score ul li div {
+  height: 33.3333333333%;
+}
+
+/*전광판 지워지고 홈런 스타일*/
+/*(bot전광판전체입력지워지고 새로운전광판뜨게*/
+.bot2 {
+  display: none;
+}
+.bot2 {
+  /*display: flex;*/
+  justify-content: center;
+  width: 1200px;
+  height: 250px;
+  border: 1px solid #222;
+  align-items: center;
+  background: black;
+  position: absolute;
+  top: 48px;
+  left: 360px;
+}
+
+.bot2 p {
+  font-size: 100px;
+  color: rgb(233, 233, 6);
+  text-align: center;
+  border: 1px solid rgb(54, 52, 52);
+  padding: 55px 300px;
+  text-shadow: 4px 4px 0px #7e9112, 8px 8px 0px #729228, 12px 12px 0px #b8e453;
+}
+/*bot2 홈런 전광판 끝*/
+
+#score ul li div {
+  width: calc(100% / 11);
+}
+#score ul li p {
+  width: calc(100% / 11);
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 5px;
+}
+
+/* .team div{
+  margin-left: 33px;
+}
+
+.team div:last-child{
+  margin-right: 2px;
+} */
+
+.one {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* margin-left: 10px; */
+}
+.one p:nth-child(1) {
+}
+
+/* .one div:nth-child(n+1){
+  margin-left: 53px;
+} */
+
+.two {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* margin-right: 10px; */
+}
+
+.two p:nth-child(1) {
+  width: 5%;
+}
+/* .two div{
+  margin-left: 50px;
+} */
+
+.bot #situatiom p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
+}
+.bot #situatiom {
+  width: 18%;
+  height: 80%;
+  border: 1px solid #222;
+  background-color: black;
+  color: rgb(210, 224, 84);
+}
+.bot #situatiom ul {
+  height: 100%;
+  width: 1005;
+}
+.bot #situatiom ul li {
+  height: 33.3333333333%;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+
+.bot #situatiom ul li:nth-child(1) {
+  padding: 5px;
+}
+.bot #situatiom ul li:nth-child(1) p {
+  width: 25%;
+}
+.bot #situatiom ul li:nth-child(1) div {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #222;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: green;
+}
+.bot #situatiom ul li:nth-child(2) {
+  padding: 5px;
+}
+.bot #situatiom ul li:nth-child(2) p {
+  width: 25%;
+}
+.bot #situatiom ul li:nth-child(2) div {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #222;
+  border-radius: 50%;
+  margin-left: 15px;
+  background-color: yellow;
+}
+.bot #situatiom ul li:nth-child(3) {
+  padding: 5px;
+}
+.bot #situatiom ul li:nth-child(3) p {
+  width: 25%;
+}
+.bot #situatiom ul li:nth-child(3) div {
+  width: 20%;
+  height: 100%;
+  border: 1px solid #222;
+  border-radius: 50%;
+  margin-left: 15px;
+  background-color: red;
+}
+
+/*전광판 (3번쨰) 시간,현재상황 스타일*/
+#now {
+  border: 1px solid #222;
+  width: 18%;
+  height: 80%;
+}
+
+.bot #time {
+  width: 20%;
+  height: 80%;
+}
+
+.bot #clock {
+  width: 20%;
+  height: 40%;
+  line-height: 80px;
+  background-color: black;
+  margin: 10px;
+}
+
+.time {
+  width: 50%;
+  height: 100%;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+  color: red;
+}
+
+#moment {
+  height: 60%;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 45px;
+  border-top: 1px solid #222;
+}
+
+/*시간,현재상황 스타일 끝*/
+
+/*볼 , 스트라이크 버튼*/
+#ballicons img {
+  width: 10%;
+}
+
+#ballicons button {
+  width: 150px;
+  padding: 15px 0;
+  border: 1px solid rgb(207, 202, 202);
+  background: linear-gradient(to right, #f3e7e9, #e3eeff);
+  border-radius: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+#bsbtn1 {
+  position: absolute;
+  top: 780px;
+  left: 32.5%;
+}
+#bsbtn2 {
+  position: absolute;
+  top: 780px;
+  left: 62%;
+}
+
+/*스윙, 지켜보기 버튼 - */
+#ballicons.off {
+  display: none;
+}
+#ballicons2 {
+  display: none;
+}
+
+#ballicons2.on {
+  display: block;
+}
+#ballicons button:nth-child(1) {
+  margin-left: 50px;
+}
+
+#ballicons button:hover {
+  background: #e4dee0;
+  transition: 1s;
+}
+#ballicons span {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#ballicons2 img {
+  width: 10%;
+}
+
+#ballicons2 button {
+  width: 150px;
+  padding: 15px 0;
+  border: 1px solid rgb(207, 202, 202);
+  background: linear-gradient(to right, #f3e7e9, #e3eeff);
+  border-radius: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+#ballicons2 button:hover {
+  background: #e4dee0;
+  transition: 1s;
+}
+#ballicons2 span {
+  font-size: 15px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+button:hover {
+  background: rgb(187, 184, 184);
+}
+
+#change {
+  width: 40%;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-45%, -150%);
+  display: none;
+}
+
+#change.on {
+  display: block;
+}
+
+#change img {
+  width: 100%;
+}
+
+#score.off {
+  display: none;
+}
+#situatiom.off {
+  display: none;
+}
+#now.off {
+  display: none;
+}
+
+#ending {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  color: #fff;
+  text-align: center;
+  font-size: 100px;
+  margin-top: 70px;
+}
+
+#ending.on {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

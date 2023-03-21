@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./baseball.js"></script>
+    <script defer src="./java.js"></script>
+  </head>
+  <body>
+    <div id="first_bg">
+      <div id="logo">
+        <marquee scrollamount="25">
+          <img src="./image/ncdinos.png" alt="" />
+          <img src="./image/samsunglions.png" alt="" />
+          <img src="./image/lotteGiants.png" alt="" />
+          <img src="./image/kiaTigers.png" alt="" />
+          <img src="./image/lgTwins.png" alt="" />
+          <img src="./image/doosanBears.png" alt="" />
+          <img src="./image/hanhwaEagles.png" alt="" />
+          <img src="./image/kiwoomHeroes.png" alt="" />
+          <img src="./image/ssgLanders.png" alt="" />
+          <img src="./image/ktWiz.png" alt="" />
+          <img src="./image/ncdinos.png" alt="" />
+          <img src="./image/samsunglions.png" alt="" />
+          <img src="./image/lotteGiants.png" alt="" />
+          <img src="./image/kiaTigers.png" alt="" />
+          <img src="./image/lgTwins.png" alt="" />
+          <img src="./image/doosanBears.png" alt="" />
+          <img src="./image/hanhwaEagles.png" alt="" />
+          <img src="./image/kiwoomHeroes.png" alt="" />
+          <img src="./image/ssgLanders.png" alt="" />
+          <img src="./image/ktWiz.png" alt="" />
+        </marquee>
+      </div>
+      <a class="gamebtn" onclick="goback()">
+        <h2><i>G A M E</i></h2>
+        <h1><i>S T A R T</i></h1>
+      </a>
+    </div>
+    <div id="wrap">
+      <section class="bot">
+        <div id="score">
+          <ul>
+            <li class="team">
+              <div><b>Team</b></div>
+              <div><b>1회</b></div>
+              <div><b>2회</b></div>
+              <div><b>3회</b></div>
+              <div><b>4회</b></div>
+              <div><b>5회</b></div>
+              <div><b>6회</b></div>
+              <div><b>7회</b></div>
+              <div><b>8회</b></div>
+              <div><b>9회</b></div>
+              <div><b>계</b></div>
+            </li>
+          </ul>
+          <ul>
+            <li class="one">
+              <p><b>com</b></p>
+              <div class="away"></div>
+              <div class="away"></div>
+              <div class="away"></div>
+              <div class="away"></div>
+              <div class="away"></div>
+              <div class="away"></div>
+              <div class="away"></div>
+              <div class="away"></div>
+              <div class="away"></div>
+              <p class="total1"></p>
+            </li>
+          </ul>
+          <ul>
+            <li class="two">
+              <p><b>user</b></p>
+              <div class="home"></div>
+              <div class="home"></div>
+              <div class="home"></div>
+              <div class="home"></div>
+              <div class="home"></div>
+              <div class="home"></div>
+              <div class="home"></div>
+              <div class="home"></div>
+              <div class="home"></div>
+              <p class="total2"></p>
+            </li>
+          </ul>
+        </div>
+        <div id="situatiom">
+          <ul>
+            <li id="green_ball">
+              <p><b>B</b></p>
+            </li>
+            <li id="yellow_strike">
+              <p><b>S</b></p>
+            </li>
+            <li id="red_out">
+              <p><b>O</b></p>
+            </li>
+          </ul>
+        </div>
+        <div id="now">
+          <div id="clock">
+            <div id="time" class="time"></div>
+          </div>
+          <div id="moment"><p>현재상황</p></div>
+        </div>
+        <div id="ending"></div>
+      </section>
+
+      <!--홈런시 나타남-->
+      <section class="bot2">
+        <p>H O M E R U N</p>
+      </section>
+
+      <!--베이스화면-->
+      <section class="main">
+        <div id="stadium">
+          <img src="./image/playground.png" alt="" />
+        </div>
+        <div id="wait1"><img src="./image/wait.gif" alt="" /></div>
+        <div id="wait2"><img src="./image/wait2.gif" alt="" /></div>
+        <div id="wait3"><img src="./image/shaking-head-no.gif" alt="" /></div>
+        <div id="run"><img src="./image/run.gif" alt="" /></div>
+        <div id="run1"><img src="./image/run.gif" alt="" /></div>
+        <div id="run2"><img src="./image/run.gif" alt="" /></div>
+        <div id="run3"><img src="./image/run.gif" alt="" /></div>
+        <div id="base2"><img src="./image/wait.gif" alt="" /></div>
+        <div id="base3"><img src="./image/wait.gif" alt="" /></div>
+        <div id="ballicons">
+          <button onclick="ball()" id="bsbtn1">
+            <img src="./image/ballicon.png" alt="" />
+            <span>B A l l</span>
+          </button>
+          <button onclick="strike()" id="bsbtn2">
+            <img src="./image/ballicon.png" alt="" />
+            <span>S t r i k e</span>
+          </button>
+        </div>
+        <div id="ballicons2">
+          <button onclick="swing()" id="bsbtn1">
+            <img src="./image/bat.png" alt="" />
+            <span>S W I N G</span>
+          </button>
+          <button onclick="wait()" id="bsbtn2">
+            <img src="./image/bat.png" alt="" />
+            <span>W A I T</span>
+          </button>
+        </div>
+      </section>
+    </div>
+    <div id="change">
+      <img src="./image/chchch.png" alt="" />
+    </div>
+  </body>
+</html>
