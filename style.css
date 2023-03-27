@@ -487,26 +487,12 @@ body {
   margin: 0 5px;
 }
 
-/* .team div{
-  margin-left: 33px;
-}
-
-.team div:last-child{
-  margin-right: 2px;
-} */
-
 .one {
   display: flex;
   justify-content: space-around;
   width: 100%;
   /* margin-left: 10px; */
 }
-.one p:nth-child(1) {
-}
-
-/* .one div:nth-child(n+1){
-  margin-left: 53px;
-} */
 
 .two {
   display: flex;
@@ -518,9 +504,6 @@ body {
 .two p:nth-child(1) {
   width: 5%;
 }
-/* .two div{
-  margin-left: 50px;
-} */
 
 .bot #situatiom p {
   font-size: 20px;
